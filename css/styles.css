@@ -37,3 +37,17 @@ body {
 .navbar-dark {
   background-color: #512DA8;
 }
+
+.tab-content {
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding: 10px;
+}
+
+#datetime {
+	font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
