@@ -26,7 +26,7 @@ $carousel-item-height: 300px;
   @include zero-margin(20px, 0px);
 }
 
-jumbotron {
+.jumbotron {
   @include zero-margin(70px, 30px);
   background: $background-light;
   color: floralwhite;
