@@ -37,7 +37,7 @@
               Contact</a></li>
         </ul>
         <span class="navbar-text">
-          <a data-toggle="modal" data-target="#loginModal">
+          <a id="loginLink">
             <span class="fa fa-sign-in"></span> Login
           </a>
         </span>
@@ -50,9 +50,9 @@
   <div id="loginModal" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg" role="content">
       <div class="modal-content">
-        <div class="modal-header">
+        <div id="loginHeader" class="modal-header">
           <h4 class="modal-title">Login</h4>
-          <button type="button" class="close" data-dismiss="modal">
+          <button type="button" class="close" id="loginCloseButton">
             &times;
           </button>
         </div>
@@ -61,11 +61,13 @@
             <div class="form-row">
               <div class="form-group col-sm-4">
                 <label class="sr-only" for="exampleInputEmail3">Email Address</label>
-                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3">
+                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                  placeholder="Email address">
               </div>
               <div class="form-group col-sm-4">
                 <label class="sr-only" for="exampleInputPassword3">Password</label>
-                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3">
+                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3"
+                  placeholder="Password">
               </div>
               <div class="col-sm-auto">
                 <div class="form-check">
@@ -75,7 +77,7 @@
               </div>
             </div>
             <div class="form-row">
-              <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-secondary btn-sm ml-auto" id="loginCancelButton">Cancel</button>
               <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
             </div>
           </form>
@@ -98,8 +100,7 @@
           <img src="img/logo.png" class="img-fluid">
         </div>
         <div class="col-12 col-sm-3 align-self-center">
-          <a class="btn btn-warning btn-block btn-sm text-decoration-none" data-toggle="modal"
-            data-target="#reserveModal">Reserve
+          <a id="reserveButton" class="btn btn-warning btn-block btn-sm text-decoration-none">Reserve
             Table</a>
         </div>
       </div>
@@ -112,9 +113,9 @@
     <div class="modal-dialog modal-lg" role="content">
       <div class="modal-content">
 
-        <div class="modal-header bg-warning">
-          <h4 class="modal-title text-white">Reserve a Table</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <div id="reserveHeader" class="modal-header">
+          <h4 class="modal-title">Reserve a Table</h4>
+          <button type="button" class="close" id="reserveCloseButton" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
@@ -175,16 +176,18 @@
             <div class="form-group row">
               <label for="time" class="col-form-label col-sm-3">Date and Time</label>
               <div class="col">
-                <input type="text" id="datetime" class="form-control" placeholder="&#xf133">
+                <input type="text" id="datetime" class="form-control" placeholder="&#xF073; Date"
+                  style="font-family:Arial, FontAwesome">
               </div>
               <div class="col">
-                <input type="text" id="datetime" class="form-control" placeholder="&#xf017">
+                <input type="text" id="datetime" class="form-control" placeholder="&#xF017; Time"
+                  style="font-family:Arial, FontAwesome">
               </div>
             </div>
 
             <div class="form-group row">
               <div class="col offset-sm-3">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-secondary" id="reserveCancelButton">Cancel</button>
                 <input class="btn btn-primary text-white" type="submit" value="Reserve">
               </div>
             </div>
